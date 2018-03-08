@@ -1,0 +1,20 @@
+{
+  "name": "daemonv",
+  "version": "1.0.0",
+  "description": "Deamon test",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "daemon"
+  ],
+  "author": "exrapid71",
+  "license": "ISC",
+  "dependencies": {
+    "facebook-events-by-location-core": "^0.10.2",
+    "mysql": "github:mysqljs/mysql",
+    "twit": "^2.2.9"
+  }
+}
