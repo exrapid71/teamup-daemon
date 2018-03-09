@@ -1,197 +1,132 @@
 {
 	"events": [
 		{
-			"id": "187108062064546",
-			"name": "Zhiyun - Lacie Ürün ve Aksesuar Tanıtım Günleri",
+			"id": "183531952376199",
+			"name": "Beşiktaş-Gençlerbirliği",
 			"type": "public",
-			"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/28336588_221695601711890_3715196543060555636_o.jpg?oh=14fbac5e57135ac87ac02e16c704f504&oe=5B0F97CA",
-			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c91.0.200.200/p200x200/28276451_221695601711890_3715196543060555636_n.jpg?oh=8acf7218e13e29b0f92dbe5935da295b&oe=5B47DE10",
-			"description": "Bu etkinlikte Zhiyun ürünleri ve aksesuarları hakkında bilgi alma ve deneyimleme,\nLaCie Copilot harici disk hakkında bilgi alma imkanı bulacaksınız.\n\nZhiyun marka elçisi Volkan Yetilmezer tarafından yapılacak bu etkinliğe katılım ücretsizdir.\n\nEtkinlik Adresi:\nZoom İthalat\nHobyar Mahallesi, Yalıköşkü Cad. Aslan Han No:22 Kat.1\nSirkeci / ISTANBUL\nTel : 0 (212) 269 76 76",
-			"distance": 921,
-			"startTime": "2018-03-24T13:00:00+0300",
-			"endTime": "2018-03-24T16:00:00+0300",
+			"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/28618972_937699313045274_5973301346129500538_o.jpg?oh=aa058749bbe274d6d134f025f5ad052b&oe=5B3D5549",
+			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/q81/c50.0.200.200/p200x200/28576158_937699313045274_5973301346129500538_n.jpg?oh=87d7787dcc961b65681f91739bb517ee&oe=5B3FF004",
+			"description": "2017-18 Süper Lig İlhan Cavcav Sezonu 24. maçında, Beşiktaş ve Gençlerbirliği Vodafone Park'ta karşılaşıyor.",
+			"distance": 3685,
+			"startTime": "2018-03-10T19:00:00+0300",
+			"endTime": "2018-03-10T21:00:00+0300",
 			"timezone": "Europe/Istanbul",
-			"updatedTime": "2018-02-25T15:06:59+0000",
-			"timeFromNow": 1455796,
+			"updatedTime": "2018-03-06T08:14:25+0000",
+			"timeFromNow": 94092,
 			"isCancelled": false,
 			"category": null,
 			"ticketing": {
-				"ticket_uri": "http://www.zhiyuntechturkiye.com/"
+				"ticket_uri": "http://www.passo.com.tr/"
 			},
 			"place": {
-				"id": "173393976542053",
-				"name": "Zhiyun Türkiye - Zoom İthalat",
+				"id": "275832452565300",
+				"name": "Vodafone Park",
 				"location": {
 					"city": "Istanbul",
 					"country": "Turkey",
-					"latitude": 41.016322141522,
-					"longitude": 28.976236581802,
-					"street": "Hobyar Mahallesi Yalıköşkü Caddesi No:22 Kat:1 / Sirkeci",
-					"zip": "34412"
+					"latitude": 41.039024050721,
+					"longitude": 28.994520155842,
+					"street": "Vodafone Park"
 				}
 			},
 			"stats": {
-				"attending": 5,
+				"attending": 3481,
 				"declined": 0,
-				"maybe": 11,
-				"noreply": 1
+				"maybe": 1876,
+				"noreply": 42
 			},
 			"distances": {
-				"venue": 921,
-				"event": 921
+				"venue": 3685,
+				"event": 3685
 			},
 			"venue": {
-				"id": "173393976542053",
-				"name": "Zhiyun Türkiye - Zoom İthalat",
-				"about": "Dünyada en çok satılan, fotoğraf makineleri, sinema kameraları, cep telefonları ve aksiyon kameralar için görüntü sabitleyici (gimbal) markası resmi Türkiye distribütörü Zoom İthalat'tır.",
-				"emails": [
-					"info@zoomithalat.com"
-				],
-				"coverPicture": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/27973445_218856961995754_6252357213814879603_n.png?oh=8eb779275814fc923ad8d7489390f0b3&oe=5B46592A",
-				"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/21751850_174993546382096_8893388244611593873_n.png?oh=08d3afdbc6e291f696dde23e615c3d2a&oe=5B0A6B93",
-				"category": "Photography Videography",
+				"id": "275832452565300",
+				"name": "Vodafone Park",
+				"about": "Milyonlarca Beşiktaşlı ve futbolseverin kalbi Türkiye’nin ilk akıllı stadyumu Vodafone Arena’da atıyor!",
+				"emails": null,
+				"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/28071326_931329837015555_393987920903126816_o.jpg?oh=4adc44de3159c1c74d6a7398baac1f14&oe=5B06BCB0",
+				"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/18814270_802242283257645_3790094763585095450_n.jpg?oh=32781a2f178bba7215c9e27c926fd1c2&oe=5B030A19",
+				"category": "Stadium, Arena & Sports Venue",
 				"categoryList": [
-					"Photography Videography"
+					"Stadium, Arena & Sports Venue"
 				],
 				"location": {
 					"city": "Istanbul",
 					"country": "Turkey",
-					"latitude": 41.016322141522,
-					"longitude": 28.976236581802,
-					"street": "Hobyar Mahallesi Yalıköşkü Caddesi No:22 Kat:1 / Sirkeci",
-					"zip": "34412"
+					"latitude": 41.039024050721,
+					"longitude": 28.994520155842,
+					"street": "Vodafone Park"
 				}
 			}
 		},
 		{
-			"id": "166843680769787",
-			"name": "Zhiyun Verimli Kullanım Atölyesi (Ücretli)",
+			"id": "1468707063428288",
+			"name": "Tesbihane Hediye Etkinliğine Davetlisin",
 			"type": "public",
-			"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/28070695_220213051860145_4276020878266823033_o.jpg?oh=3e05e61104b3f3e14c66200f80c2b382&oe=5B0F1E6C",
-			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c91.0.200.200/p200x200/28279133_220213051860145_4276020878266823033_n.jpg?oh=6dacf8952a25f23a3633a11e8f94fe74&oe=5B432531",
-			"description": "DİKKAT! Bu atölyeye sadece www.zhiyuntechturkiye.com adresine kayıt olmuş, Zoom İthalat bandrollü ürün sahipleri katılabilir.\n\nZhiyun ürününüzü yeterince iyi kullanamadığınızı veya bilmediğiniz yönlerini öğrenmek için bu atölyeyi kaçırmayın!\n\nAtölye, Zhiyun Offical Brand Ambassador Volkan Yetilmezer tarafından özel olarak yapılacaktır.\n\nAtölye İçeriği:\n- Denge Ayarı\n- Kalibrasyon\n- Tuşlar ve Menü Kullanımı\n- Modların Kullanımı\n- ZY PLAY Uygulaması Kullanımı\n- Aksesuarların Kullanımı\n- Obje Takibi ve Motion Memory Kullanımı\n- Zhiyun ile Video Çekim Teknikleri\n- Soru / Cevap Bölümü\n- AYRICA CRANE 2 ÜCRETSİZ YAZILIM GÜNCELLEME (Bu sayede Crane 2 cihazınıza yeni POV modu eklenecektir.)\n\nEtkinlik, butik bir etkinlik olacağı için katılım 6 kişi ile sınırlıdır. Bu şekilde etkinlikten en iyi şekilde verim alınması sağlanacaktır.\n\nKatılım Ücreti: 200 TL (1 Kişi)\n\nAyrıca eğitim günü 1.000 üzeri Zhiyun aksesuar alımında 200 TL indirim, Crane serisi sabitleyici alımlarınızda 200 TL indirim yapılacaktır.\n\nEğer ürününüzü kaydetmediyseniz öncelikle www.zhiyuntechturkiye.com adresine kayıt ettiriniz. Ardından aşağıda yer alan hesaba katılım ücretini, açıklama kısmına \"Zhiyun Eğitimi\" yazarak gönderiniz.\n\nHesap Bilgileri\nVolkan Yetilmezer\nFinansbank Enpara.com\nIBAN: TR86 0011 1000 0000 0062 4498 88\n\nNot: Ödeme sonrasında eğitime katılamama durumunda, ücret iadesi yapılmayacaktır. Başka bir etkinliğe katılımcı aktarılmayacaktır. Bu yüzden eğitim gününde ve saatinde orada bulunmak önem arz etmektedir.",
-			"distance": 921,
-			"startTime": "2018-03-10T11:00:00+0300",
-			"endTime": "2018-03-10T15:00:00+0300",
+			"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/20280575_1758496040845632_7424582620888149553_o.jpg?oh=afdc0ecccf84a42165808ea5eaf8c792&oe=5B0612EE",
+			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c51.0.200.200/p200x200/20246259_1758496040845632_7424582620888149553_n.jpg?oh=bab0ab20c2462726512334700e2aa4a6&oe=5B0415BA",
+			"description": "www.tesbihane.com\nSürpriz hediyeler etkinliğimize sizleri bekliyoruz!. Ayrıca indirimli ve hediyeli ürünlerimizi de buradan takip edebilirsiniz.",
+			"distance": 634,
+			"startTime": "2020-01-01T09:00:00+0300",
+			"endTime": "2020-01-01T12:00:00+0300",
 			"timezone": "Europe/Istanbul",
-			"updatedTime": "2018-02-21T06:55:25+0000",
-			"timeFromNow": 238996,
+			"updatedTime": "2018-02-09T09:09:38+0000",
+			"timeFromNow": 57254892,
 			"isCancelled": false,
 			"category": null,
 			"ticketing": {
-				"ticket_uri": "http://www.zhiyuntechturkiye.com/"
+				"ticket_uri": "http://www.tesbihane.com/"
 			},
 			"place": {
-				"id": "173393976542053",
-				"name": "Zhiyun Türkiye - Zoom İthalat",
+				"id": "1082611935100716",
+				"name": "Tesbihane",
 				"location": {
 					"city": "Istanbul",
 					"country": "Turkey",
-					"latitude": 41.016322141522,
-					"longitude": 28.976236581802,
-					"street": "Hobyar Mahallesi Yalıköşkü Caddesi No:22 Kat:1 / Sirkeci",
-					"zip": "34412"
+					"latitude": 41.00786,
+					"longitude": 28.97086,
+					"street": "Emin Sİnan Mah. Taşdirek Çeşmesi Sok. No:10/102 Çemberlitaş/Fatih",
+					"zip": "34161"
 				}
 			},
 			"stats": {
-				"attending": 10,
+				"attending": 69,
 				"declined": 0,
-				"maybe": 19,
-				"noreply": 0
+				"maybe": 234,
+				"noreply": 960
 			},
 			"distances": {
-				"venue": 921,
-				"event": 921
+				"venue": 634,
+				"event": 634
 			},
 			"venue": {
-				"id": "173393976542053",
-				"name": "Zhiyun Türkiye - Zoom İthalat",
-				"about": "Dünyada en çok satılan, fotoğraf makineleri, sinema kameraları, cep telefonları ve aksiyon kameralar için görüntü sabitleyici (gimbal) markası resmi Türkiye distribütörü Zoom İthalat'tır.",
+				"id": "1082611935100716",
+				"name": "Tesbihane",
+				"about": "Türkiye'nin en büyük takı&aksesuar markası olan Tesbihane'nin kurumsal sayfasıdır. \n\nTel: 02128881133\nWhatsApp Hızlı Sipariş Hattı: 0534 363 1122 ",
 				"emails": [
-					"info@zoomithalat.com"
+					"info@tesbihane.com"
 				],
-				"coverPicture": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/27973445_218856961995754_6252357213814879603_n.png?oh=8eb779275814fc923ad8d7489390f0b3&oe=5B46592A",
-				"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/21751850_174993546382096_8893388244611593873_n.png?oh=08d3afdbc6e291f696dde23e615c3d2a&oe=5B0A6B93",
-				"category": "Photography Videography",
+				"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/27788447_1974836189211615_8369265913333214526_o.jpg?oh=3cff87794e31c1c748a249e11d3bcc76&oe=5B3CBCE5",
+				"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/14680600_1425823384112901_2922102143971682937_n.png?oh=f4ca4db5893066c579a01d5cb62a769d&oe=5B3C3346",
+				"category": "Website",
 				"categoryList": [
-					"Photography Videography"
+					"Website",
+					"Accessories"
 				],
 				"location": {
 					"city": "Istanbul",
 					"country": "Turkey",
-					"latitude": 41.016322141522,
-					"longitude": 28.976236581802,
-					"street": "Hobyar Mahallesi Yalıköşkü Caddesi No:22 Kat:1 / Sirkeci",
-					"zip": "34412"
-				}
-			}
-		},
-		{
-			"id": "171115130202973",
-			"name": "Yaşayan Kütüphane",
-			"type": "public",
-			"coverPicture": "https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/28336742_409821262764643_7203168785559091392_o.jpg?oh=76bf07db910a09925c3f9b0e2e70ddce&oe=5B3C8905",
-			"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-0/c78.0.200.200/p200x200/28468691_409821262764643_7203168785559091392_n.jpg?oh=ab88d9a1f7994f076f5efc770499be90&oe=5B4370DE",
-			"description": "Lütfen bu kütüphanede konuşunuz!.. Toplum Gönüllüleri Vakfı’nın (TOG) düzenlediği #YaşayanKütüphane ilk kez “kadın” odaklı gerçekleşiyor. #YapıKrediKültürSanat'ta okuduğumuz kitapların birer insan olduğu bir kütüphane kuruyoruz. 8 Mart Perşembe 11:00 - 17:00 arasında Loca'da\n\nhttp://bit.ly/2FHaFdf",
-			"distance": 909,
-			"startTime": "2018-03-08T11:00:00+0300",
-			"endTime": "2018-03-08T17:00:00+0300",
-			"timezone": "Europe/Istanbul",
-			"updatedTime": "2018-03-01T15:21:34+0000",
-			"timeFromNow": 66196,
-			"isCancelled": false,
-			"category": null,
-			"place": {
-				"id": "344533545960082",
-				"name": "Yapı Kredi Kültür Sanat",
-				"location": {
-					"city": "Istanbul",
-					"country": "Turkey",
-					"latitude": 41.033202413139,
-					"longitude": 28.97700637579,
-					"street": "İstiklal Caddesi, No: 161",
-					"zip": "34433"
-				}
-			},
-			"stats": {
-				"attending": 87,
-				"declined": 0,
-				"maybe": 280,
-				"noreply": 24
-			},
-			"distances": {
-				"venue": 909,
-				"event": 2783
-			},
-			"venue": {
-				"id": "33070104653",
-				"name": "Toplum Gönüllüleri Vakfı - TOG",
-				"about": "TOG, gençlerin enerjisini topluma faydalı olmak için harekete geçirecek fırsat ve imkânlar sağlar.",
-				"emails": [
-					"info@tog.org.tr"
-				],
-				"coverPicture": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/19399522_10155362094324654_8498494005801586021_n.jpg?oh=6d49badb189d4c9d0aff49c66f6dfec1&oe=5B40F4F7",
-				"profilePicture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/26231086_10155932826054654_2605875699265863615_n.png?oh=8a15004c9cad597be81a97f47886dc49&oe=5B42A414",
-				"category": "Nonprofit Organization",
-				"categoryList": [
-					"Nonprofit Organization",
-					"Social Service",
-					"Youth Organization"
-				],
-				"location": {
-					"city": "Eminönü",
-					"country": "Turkey",
-					"latitude": 41.014873093759,
-					"longitude": 28.972151577473,
-					"street": "Hobyar Mah. Aşirefendi Cad. No:20 Ankara-Konya Han Kat.4",
-					"zip": "34112"
+					"latitude": 41.00786,
+					"longitude": 28.97086,
+					"street": "Emin Sİnan Mah. Taşdirek Çeşmesi Sok. No:10/102 Çemberlitaş/Fatih",
+					"zip": "34161"
 				}
 			}
 		}
 	],
 	"metadata": {
-		"venues": 100,
+		"venues": 50,
 		"venuesWithEvents": 2,
-		"events": 3
+		"events": 2
 	}
 }

@@ -26,13 +26,25 @@ facebook_search();
 function facebook_search() {
     //fsearch.accessToken(350169158833909|y5nYTHY7NfuIBy_cPGCvYSd5XHw);
     var token = "350169158833909|y5nYTHY7NfuIBy_cPGCvYSd5XHw";
+    // some variable that
     var query ="yazılım maratonu";
+    //max distance differance between lat and lang
+    var distance = 10000;
+    //max results
+    var limit = 50;
+    //dont know
+    var since =1;
+    var until =2;
+
     console.log("Facebook search start");
     fsearch.search({
         "lat": 41.0082,
         "lng": 28.9784,
         "accessToken": token,
-        "distance": 1000
+        "distance": distance,
+        "limit": limit,
+        "since": since,
+        "until": until
     }).then(function (events) {
         //console.log(JSON.stringify(events));
         //console.log(JSON.stringify(events.place.name));
