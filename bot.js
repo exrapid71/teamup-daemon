@@ -13,6 +13,9 @@ var fsearch = new facebook_event();
 var file = require('fs');
 //for mysql database connection
 var mysql = require('mysql');
+//for eventbrite search
+var Eventbrite = require('eventbrite');
+var event = require('search-eventbrite');
 
 var connection = mysql.createConnection({
     host     : 'localhost',
@@ -21,8 +24,53 @@ var connection = mysql.createConnection({
     database : 'teamup'
 });
 
+eventBriteSearch();
+
+function eventBriteSearch() {
+
+    event.getAll({
+        q: 'yazılım',
+        sort_by: 'date'
+    }, function(err, res, events){
+        if(err){
+            return console.log('err: ', err);
+        }
+        else{
+            console.log('events: ', events);
+            saveJson(events);
+            saveEventDatabase(events);
+        }
+    });
+    /*
+    var eb_client = Eventbrite({
+        'app_key':"N2SZNO2INJ344WRWT5",
+        'user_key':"1520637916247081261705"
+        });
+
+    var params = {
+        'name': "hackathon"
+        };
+
+    eb_client.event_search( params, gotData);
+
+    function gotData(err, data) {
+
+        if(err){
+            console.log("Can't Work!");
+            console.log(err);
+        }
+        else{
+            console.log(data);
+            saveJson(data);
+        }
+    }
+    */
+
+}
+
+
 var token = "350169158833909|y5nYTHY7NfuIBy_cPGCvYSd5XHw";
-facebook_search();
+//facebook_search();
 function facebook_search() {
     //fsearch.accessToken(350169158833909|y5nYTHY7NfuIBy_cPGCvYSd5XHw);
     var token = "350169158833909|y5nYTHY7NfuIBy_cPGCvYSd5XHw";
@@ -87,7 +135,7 @@ function tsearch(){
                 var stweet = tweets[i].text;
                 tweettext.push(stweet);
                 console.log(stweet);
-                saveDatabase(stweet);
+                saveTweetDatabase(stweet);
             }
             //saveJson(tweettext);
         }
@@ -95,9 +143,27 @@ function tsearch(){
     }
 
 }
+function saveEventDatabase(text) {
+    connection.connect(function(err) {
+        if (err){
+            console.log("cannot connect");
+        }
+        else {
+            console.log("Connected!");
+        }
+    });
 
+    connection.query('INSERT INTO event SET ?', {text: text}, function (error, results, fields) {
+        if (error){
+            throw error;
+        }
+        else{
+            console.log(results.insertId);
+        }
+    });
+}
 
-function saveDatabase(text) {
+function saveTweetDatabase(text) {
     connection.connect(function(err) {
         if (err){
             console.log("cannot connect");

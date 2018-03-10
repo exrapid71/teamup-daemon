@@ -13,8 +13,10 @@
   "author": "exrapid71",
   "license": "ISC",
   "dependencies": {
+    "eventbrite": "^0.1.6",
     "facebook-events-by-location-core": "^0.10.2",
     "mysql": "github:mysqljs/mysql",
+    "search-eventbrite": "^1.0.7",
     "twit": "^2.2.9"
   }
 }
