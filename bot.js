@@ -38,7 +38,7 @@ function eventBriteSearch() {
         else{
             console.log('events: ', events);
             saveJson(events);
-            saveEventDatabase(events);
+            //saveEventDatabase(events);
         }
     });
     /*
