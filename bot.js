@@ -18,13 +18,13 @@ var Eventbrite = require('eventbrite');
 var event = require('search-eventbrite');
 
 var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'exrapid71',
-    database : 'teamup'
+    host     : 'zpj83vpaccjer3ah.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+    user     : 'rhyvl5hjprzbtgcl',
+    password : 'h6zby9jnvxiwiwnq',
+    database : 'm09ejdlb4hbxrn45'
 });
 
-eventBriteSearch();
+//eventBriteSearch();
 
 function eventBriteSearch() {
 
@@ -112,7 +112,7 @@ function facebook_search() {
 
 
 
-//tsearch();
+tsearch();
 
 //twitter search
 function tsearch(){
@@ -164,6 +164,7 @@ function saveEventDatabase(text) {
 }
 
 function saveTweetDatabase(text) {
+
     connection.connect(function(err) {
         if (err){
             console.log("cannot connect");
