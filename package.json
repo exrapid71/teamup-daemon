@@ -13,10 +13,14 @@
   "author": "exrapid71",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "eventbrite": "^0.1.6",
+    "express": "^4.16.3",
     "facebook-events-by-location-core": "^0.10.2",
     "mysql": "github:mysqljs/mysql",
+    "node-eventbrite": "0.0.19",
     "search-eventbrite": "^1.0.7",
-    "twit": "^2.2.9"
+    "twit": "^2.2.9",
+    "xmlhttprequest": "^1.8.0"
   }
 }
