@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
     database: 'teamup',
     multipleStatements: 'true'
 });
-
+var datas;
 eventBriteSearch();
 
 function eventBriteSearch() {
@@ -32,9 +32,10 @@ function eventBriteSearch() {
         console.log(error.message);
     }
     var params = {
-        q: 'yazılım',
+        q: 'hackathon',
         sort_by: 'date'
     };
+    //q:'yazılım',
     var eventName;
     var eventId;
     var eventUrl;
@@ -48,17 +49,25 @@ function eventBriteSearch() {
         else {
             //console.log(JSON.stringify(data));
             var events = data.events;
+
             for (var i = 0; i < events.length; i++) {
                 var eventInfo = [];
+
                 eventName = events[i].name.text;
                 //eventInfo.push(eventName);
                 eventId = events[i].id;
                 //eventInfo.push(eventId);
-                eventUrl = events[i].url;
+                if (events[i].url === null) {
+                    eventUrl = 1;
+                }
+                else {
+                    eventUrl = events[i].url;
+                }
+
                 //eventInfo.push(eventUrl);
                 eventStartdate = events[i].start.local;
                 //eventInfo.push(eventStartdate);
-                eventThumbnail = events[i].logo.url;
+                eventThumbnail = 1;
                 //eventInfo.push(eventThumbnail);
                 eventInfo.push([
                     eventName,
@@ -74,9 +83,17 @@ function eventBriteSearch() {
                     eventStartdate,
                     eventThumbnail
                 ]);
+
+                if (!(checkEventDatabase(eventId))) {
+                    console.log("SameEvent");
+                }
+                else {
+                    saveEventDatabase(eventInfo);
+                }
                 //eventName.push(event);
-                saveEventDatabase(eventInfo);
+                //saveEventDatabase(eventInfo);
                 //console.log(eventInfo);
+
             }
             //console.log(eventinfo);
             saveJson(eventData);
@@ -117,4 +134,36 @@ function saveEventDatabase(event) {
             console.log(results.insertId);
         }
     });
+}
+
+function checkEventDatabase(eventId) {
+    var eventIds;
+    connection.connect(function (err) {
+        if (err) {
+            console.log("cannot connect");
+        }
+        else {
+            console.log("Connected!");
+        }
+    });
+    //var query = "SELECT * FROM posts WHERE title=" + mysql.escape("Hello MySQL");
+    //connection.query('SELECT id FROM event WHERE id = ?', [eventIds] , function (error, results, fields) {
+    var sql = 'SELECT id FROM event WHERE id = ' + connection.escape(eventId);
+    connection.query(sql, function (error, results, fields) {
+        if (error) {
+            throw error;
+        }
+        else {
+            console.log(results[0].id);
+            if (results[0].id === eventId) {
+                return 1;
+            }
+            else {
+                return 0;
+            }
+        }
+
+    });
+
+
 }
