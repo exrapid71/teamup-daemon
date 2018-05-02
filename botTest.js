@@ -89,7 +89,7 @@ function eventBriteSearch() {
                     eventThumbnail
                 ]);
 
-                checkEventDatabase(eventId,eventInfo);
+                checkEventDatabase(eventId, eventInfo);
 
                 /*
                 setTimeout(function(){
@@ -142,6 +142,14 @@ function saveEventDatabase(event) {
             console.log("Connected!");
         }
     });
+    connection.on('error', function (err) {
+        console.log('db error', err);
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
+            saveEventDatabase(event);                         // lost due to either server restart, or a
+        } else {                                      // connnection idle timeout (the wait_timeout
+            throw err;                                  // server variable configures this)
+        }
+    });
     connection.query('INSERT INTO `event` (`name`, `id`, `url`, `start`, `thumbnail`) VALUES ?', [event], function (error, results, fields) {
         if (error) {
             throw error;
@@ -152,14 +160,23 @@ function saveEventDatabase(event) {
     });
 }
 
-function checkEventDatabase(eventId,eventInfo) {
+function checkEventDatabase(eventId, eventInfo) {
     var eventIds;
+
     connection.connect(function (err) {
         if (err) {
             console.log("cannot connect");
         }
         else {
             console.log("Connected!");
+        }
+    });
+    connection.on('error', function (err) {
+        console.log('db error', err);
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
+            checkEventDatabase(eventId, eventInfo);                         // lost due to either server restart, or a
+        } else {                                      // connnection idle timeout (the wait_timeout
+            throw err;                                  // server variable configures this)
         }
     });
     //var query = "SELECT * FROM posts WHERE title=" + mysql.escape("Hello MySQL");
@@ -179,10 +196,10 @@ function checkEventDatabase(eventId,eventInfo) {
                     break;
                 }
             }
-            console.log(index);
+            //console.log(index);
             if (index) {
                 //fooMessages.splice(index,1);
-                console.log(eventId+" Same Event");
+                console.log(eventId + " Same Event");
             }
             else {
                 saveEventDatabase(eventInfo);
@@ -202,12 +219,32 @@ function checkEventDatabase(eventId,eventInfo) {
 
 
 }
+
 function endConnection() {
-    connection.end(function(err) {
+    connection.end(function (err) {
         if (err) {
             return console.log('error:' + err.message);
         }
         console.log('Close the database connection.');
+    });
+}
+
+function handleDisconnect() {
+
+    connection.connect(function (err) {              // The server is either down
+        if (err) {                                     // or restarting (takes a while sometimes).
+            console.log('error when connecting to db:', err);
+            setTimeout(handleDisconnect, 2000); // We introduce a delay before attempting to reconnect,
+        }                                     // to avoid a hot loop, and to allow our node script to
+    });                                     // process asynchronous requests in the meantime.
+                                            // If you're also serving http, display a 503 error.
+    connection.on('error', function (err) {
+        console.log('db error', err);
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
+            handleDisconnect();                         // lost due to either server restart, or a
+        } else {                                      // connnection idle timeout (the wait_timeout
+            throw err;                                  // server variable configures this)
+        }
     });
 }
 
