@@ -30,7 +30,8 @@ function eventBriteSearch() {
         console.log(error.message);
     }
     var params = {
-        q: 'yazılım',
+        q: 'hackathon',
+        'location.address': 'Turkey',
         sort_by: 'date'
     };
     var eventName;
@@ -60,12 +61,13 @@ function eventBriteSearch() {
                     eventThumbnail
                 ]);
                 eventData.push([eventName, eventId, eventUrl, eventStartdate, eventThumbnail]);
-                saveEventDatabase(eventInfo);
+                checkEventDatabase(eventId,eventInfo);
             }
 
             saveJson(eventData);
         }
-        connection.end();
+        //cannot end connection
+        //endConnection();
     });
 }
 
@@ -100,4 +102,45 @@ function saveEventDatabase(event) {
             console.log(results.insertId);
         }
     });
+}
+function checkEventDatabase(eventId,eventInfo) {
+    var eventIds;
+    connection.connect(function (err) {
+        if (err) {
+            console.log("cannot connect");
+        }
+        else {
+            console.log("Connected!");
+        }
+    });
+    var sql = 'SELECT id FROM event';
+    connection.query(sql, [eventIds], function (error, results, fields) {
+        if (error) {
+            throw error;
+        }
+        else {
+            console.log(results[0].id);
+            var index = 0;
+            for (var i = 0; i < results.length; i++) {
+                if (results[i].id === eventId) {
+                    index++;
+                    break;
+                }
+            }
+            console.log(index);
+            if (index) {
+                console.log(eventId+" Same Event");
+            }
+            else {
+                saveEventDatabase(eventInfo);
+            }
+        }
+    });
+
+
+}
+
+function endConnection() {
+    connection.end();
+    console.log("connection closed");
 }

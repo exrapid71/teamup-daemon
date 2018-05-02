@@ -32,10 +32,13 @@ function eventBriteSearch() {
         console.log(error.message);
     }
     var params = {
-        q: 'hackathon',
+        q: 'yazılım',
+        'location.address': 'Turkey',
         sort_by: 'date'
     };
+    //q: 'hackathon'
     //q:'yazılım',
+    //'location.address' : 'Turkey'
     var eventName;
     var eventId;
     var eventUrl;
@@ -57,17 +60,19 @@ function eventBriteSearch() {
                 //eventInfo.push(eventName);
                 eventId = events[i].id;
                 //eventInfo.push(eventId);
+                eventUrl = events[i].url;
+                /*
                 if (events[i].url === null) {
                     eventUrl = 1;
                 }
                 else {
                     eventUrl = events[i].url;
                 }
-
+                */
                 //eventInfo.push(eventUrl);
                 eventStartdate = events[i].start.local;
                 //eventInfo.push(eventStartdate);
-                eventThumbnail = 1;
+                eventThumbnail = events[i].logo.url;
                 //eventInfo.push(eventThumbnail);
                 eventInfo.push([
                     eventName,
@@ -84,23 +89,34 @@ function eventBriteSearch() {
                     eventThumbnail
                 ]);
 
-                if (!(checkEventDatabase(eventId))) {
+                checkEventDatabase(eventId,eventInfo);
+
+                /*
+                setTimeout(function(){
+                    console.log("TimeOut");
+                    }, 3000);
+                console.log(ch);
+                if (check !== 0) {
                     console.log("SameEvent");
                 }
                 else {
                     saveEventDatabase(eventInfo);
                 }
+                */
+
                 //eventName.push(event);
                 //saveEventDatabase(eventInfo);
                 //console.log(eventInfo);
 
             }
+            //endConnection();
             //console.log(eventinfo);
-            saveJson(eventData);
+            //saveJson(eventData);
 
         }
-        connection.end();
+
     });
+
 }
 
 
@@ -136,7 +152,7 @@ function saveEventDatabase(event) {
     });
 }
 
-function checkEventDatabase(eventId) {
+function checkEventDatabase(eventId,eventInfo) {
     var eventIds;
     connection.connect(function (err) {
         if (err) {
@@ -148,22 +164,46 @@ function checkEventDatabase(eventId) {
     });
     //var query = "SELECT * FROM posts WHERE title=" + mysql.escape("Hello MySQL");
     //connection.query('SELECT id FROM event WHERE id = ?', [eventIds] , function (error, results, fields) {
-    var sql = 'SELECT id FROM event WHERE id = ' + connection.escape(eventId);
-    connection.query(sql, function (error, results, fields) {
+    //var sql = 'SELECT id FROM event WHERE id = ' + connection.escape(eventId);
+    var sql = 'SELECT id FROM event';
+    connection.query(sql, [eventIds], function (error, results, fields) {
         if (error) {
             throw error;
         }
         else {
             console.log(results[0].id);
-            if (results[0].id === eventId) {
-                return 1;
+            var index = 0;
+            for (var i = 0; i < results.length; i++) {
+                if (results[i].id === eventId) {
+                    index++;
+                    break;
+                }
+            }
+            console.log(index);
+            if (index) {
+                //fooMessages.splice(index,1);
+                console.log(eventId+" Same Event");
             }
             else {
-                return 0;
+                saveEventDatabase(eventInfo);
             }
+            /*
+            if (results[0].id === eventId) {
+
+            }
+            else {
+
+            }
+            */
         }
+
 
     });
 
 
 }
+function endConnection() {
+    connection.end();
+    console.log("connection closed");
+}
+
