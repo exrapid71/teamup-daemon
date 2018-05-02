@@ -67,7 +67,7 @@ function eventBriteSearch() {
             saveJson(eventData);
         }
         //cannot end connection
-        //endConnection();
+        endConnection();
     });
 }
 
@@ -127,7 +127,6 @@ function checkEventDatabase(eventId,eventInfo) {
                     break;
                 }
             }
-            console.log(index);
             if (index) {
                 console.log(eventId+" Same Event");
             }
@@ -141,6 +140,10 @@ function checkEventDatabase(eventId,eventInfo) {
 }
 
 function endConnection() {
-    connection.end();
-    console.log("connection closed");
+    connection.end(function(err) {
+        if (err) {
+            return console.log('error:' + err.message);
+        }
+        console.log('Close the database connection.');
+    });
 }

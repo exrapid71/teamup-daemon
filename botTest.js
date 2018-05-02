@@ -109,10 +109,10 @@ function eventBriteSearch() {
                 //console.log(eventInfo);
 
             }
-            //endConnection();
+            endConnection();
             //console.log(eventinfo);
             //saveJson(eventData);
-
+            //setTimeout(endConnection(),15000);
         }
 
     });
@@ -203,7 +203,11 @@ function checkEventDatabase(eventId,eventInfo) {
 
 }
 function endConnection() {
-    connection.end();
-    console.log("connection closed");
+    connection.end(function(err) {
+        if (err) {
+            return console.log('error:' + err.message);
+        }
+        console.log('Close the database connection.');
+    });
 }
 
