@@ -42,6 +42,7 @@ function eventBriteSearch() {
     var eventUrl;
     var eventStartdate;
     var eventThumbnail;
+    var eventDescription;
     var eventData = [];
     api.search(params, function (error, data) {
         if (error) {
@@ -49,25 +50,28 @@ function eventBriteSearch() {
         }
         else {
             var events = data.events;
+            var eventInfo = [];
             for (var i = 0; i < events.length; i++) {
-                var eventInfo = [];
                 eventName = events[i].name.text;
                 eventId = events[i].id;
                 eventUrl = events[i].url;
                 eventStartdate = events[i].start.local;
                 eventThumbnail = events[i].logo.url;
+                eventDescription = events[i].description.text;
                 eventInfo.push([
                     eventName,
                     eventId,
                     eventUrl,
                     eventStartdate,
-                    eventThumbnail
+                    eventThumbnail,
+                    eventDescription
                 ]);
-                eventData.push([eventName, eventId, eventUrl, eventStartdate, eventThumbnail]);
-                checkEventDatabase(eventId, eventInfo);
+                eventData.push([eventName, eventId, eventUrl, eventStartdate, eventThumbnail,eventDescription]);
+                //checkEventDatabase(eventId, eventInfo);
+                saveEventDatabase(eventInfo);
             }
 
-            saveJson(eventData);
+            //saveJson(eventData);
         }
         //cannot end connection
         //endConnection();
@@ -103,7 +107,7 @@ function saveEventDatabase(event) {
                     throw err;                                  // server variable configures this)
                 }
             });
-            connection.query('INSERT INTO `event` (`name`, `id`, `url`, `start`, `thumbnail`) VALUES ?', [event], function (error, results, fields) {
+            connection.query('INSERT INTO `event` (`name`, `eventid`, `url`, `start`, `thumbnail`,`description`) VALUES ?', [event], function (error, results, fields) {
                 if (error) {
                     throw error;
                 }
@@ -133,12 +137,13 @@ function checkEventDatabase(eventId, eventInfo) {
                     throw err;                                  // server variable configures this)
                 }
             });
-            var sql = 'SELECT id FROM event';
+            var sql = 'SELECT eventid FROM event';
             connection.query(sql, [eventIds], function (error, results, fields) {
                 if (error) {
                     throw error;
                 }
                 else {
+                    console.log(results);
                     console.log(results[0].id);
                     var index = 0;
                     for (var i = 0; i < results.length; i++) {

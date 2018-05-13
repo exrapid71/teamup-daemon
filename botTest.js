@@ -21,6 +21,7 @@ var connection = mysql.createConnection({
 var datas;
 eventBriteSearch();
 
+//null gelince bide yer mekan isimleri ve database connection
 function eventBriteSearch() {
 
     try {
@@ -32,7 +33,7 @@ function eventBriteSearch() {
         console.log(error.message);
     }
     var params = {
-        q: 'yazılım',
+        q: 'hackathon',
         'location.address': 'Turkey',
         sort_by: 'date'
     };
@@ -44,6 +45,7 @@ function eventBriteSearch() {
     var eventUrl;
     var eventStartdate;
     var eventThumbnail;
+    var eventDescription;
     var eventData = [];
     api.search(params, function (error, data) {
         if (error) {
@@ -51,6 +53,7 @@ function eventBriteSearch() {
         }
         else {
             //console.log(JSON.stringify(data));
+            saveJson(data);
             var events = data.events;
 
             for (var i = 0; i < events.length; i++) {
@@ -72,25 +75,30 @@ function eventBriteSearch() {
                 //eventInfo.push(eventUrl);
                 eventStartdate = events[i].start.local;
                 //eventInfo.push(eventStartdate);
+                //eventThumbnail = null;
+                // patladı
                 eventThumbnail = events[i].logo.url;
                 //eventInfo.push(eventThumbnail);
+                eventDescription = events[i].description.text;
                 eventInfo.push([
                     eventName,
                     eventId,
                     eventUrl,
                     eventStartdate,
-                    eventThumbnail
+                    eventThumbnail,
+                    eventDescription
                 ]);
                 eventData.push([
                     eventName,
                     eventId,
                     eventUrl,
                     eventStartdate,
-                    eventThumbnail
+                    eventThumbnail,
+                    eventDescription
                 ]);
 
                 checkEventDatabase(eventId, eventInfo);
-
+                //saveEventDatabase(eventInfo);
                 /*
                 setTimeout(function(){
                     console.log("TimeOut");
@@ -109,7 +117,7 @@ function eventBriteSearch() {
                 //console.log(eventInfo);
 
             }
-            endConnection();
+            //endConnection();
             //console.log(eventinfo);
             //saveJson(eventData);
             //setTimeout(endConnection(),15000);
@@ -150,7 +158,7 @@ function saveEventDatabase(event) {
             throw err;                                  // server variable configures this)
         }
     });
-    connection.query('INSERT INTO `event` (`name`, `id`, `url`, `start`, `thumbnail`) VALUES ?', [event], function (error, results, fields) {
+    connection.query('INSERT INTO `event` (`name`, `eventid`, `url`, `start`, `thumbnail`,`description`) VALUES ?', [event], function (error, results, fields) {
         if (error) {
             throw error;
         }

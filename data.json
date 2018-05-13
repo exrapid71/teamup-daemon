@@ -1,58 +1,170 @@
-[
-	[
-		"Kullanıcı Deneyimi Tasarımı (UI/UX) Workshop [ÜCRETLİ]",
-		"45134807424",
-		"https://www.eventbrite.com/e/kullanc-deneyimi-tasarm-uiux-workshop-ucretli-tickets-45134807424?aff=ebapi",
-		"2018-05-02T18:30:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F43520545%2F192870294109%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C0%2C2160%2C1080&s=c1633bea9c366210979315d9b3eca67e"
+{
+	"pagination": {
+		"object_count": 2,
+		"page_number": 1,
+		"page_size": 50,
+		"page_count": 1,
+		"has_more_items": false
+	},
+	"events": [
+		{
+			"name": {
+				"text": "Tepe Savunma Hackathon ",
+				"html": "Tepe Savunma Hackathon "
+			},
+			"description": {
+				"text": "\r\n\r\n\r\nFİKRİN AKLINDA KALMASIN,\r\nGÜVENLİĞİMİZ İÇİN YARIŞSIN!\r\n\r\n\r\nAramızdaki bağ, yenilikçi fikirlerle güçleniyor!\r\n\r\n\r\nHACKATHON KONUSU\r\nÖZEL GÜVENLİK HİZMETLERİ DAHİLİNDE\r\n \r\n\r\nZiyarete açık kalabalık mekânlara\r\nGeniş alana yayılı ziyarete kapalı tesislere\r\nKıymetli evrak veya kıymetli eşya nakil işine\r\nBireysel ihtiyaçlara yönelik\r\n\r\n \r\nFİZİKİ GÜVENLİK UYGULAMALARINA\r\nDeneyim, Hız, Dijitalleşme ve Yetkinlik konularında iyileştirme yaratacak\r\nUygulanabilir, Özgün ve Fayda Sağlayacak \r\nEntegre Çözüm Önerilerinizi\r\nBEKLİYORUZ!\r\nProgram Akışı:\r\n1.Gün\r\n09.30-10.00  Hackathon açılış konuşmaları ( amacın paylaşılması, program detaylarının anlatılması)  \r\n10.00-12.00  Hackathon işleyişi ve girişim fikrini hayat geçirme ile ilgili eğitim  \r\n12.00-13.00  Katılımcılarla ısınma aktivitesi yapılması ve Yemek  \r\n13.30-14.00  60 saniyelik idea pitch   14.00-14.10  Fikirlerin oylanması   14.10-14.20  En fazla oy alan10 ekibin seçilmesi   14.20-14.30  En fazla 5 kişiden oluşan takımların oluşturulması   14.30-14.35  24 saatlik iş geliştirme-kodlama sürecinin başlatılması  Hacking…. (Tepe Savunma + Organizasyon Mentörleri ile çalışma)  2.Gün  10.00-11.00  Mentörlerle çalışma (Organizasyon Mentörleri ile çalışma)  11.00-11.30  Sunum eğitimi  11.30-14.30  Hacking…  14.30-15.30  Sunumların tamamlanması ve teslim\r\n 15.30-16.30  Jüriye sunumların yapılması\r\n 16.30-17.00  Jüri kararının açıklanması  17.00-17.30  Ödül Töreni  18.00  Kokteyl  \r\nÖdüller:\r\n1. Takıma  20.000TL \r\n2. Takıma 15.000TL \r\n3. Takıma   5.000TL \r\nJüri Üyeleri:\r\n Bora Doğualp  \r\nAlphan Manas\r\nSerdar Kuzuloğlu \r\n \r\nMentörler:\r\nEmre Özbek\r\nÖzkan Zere\r\nMine Dedekoca\r\nBurak Yaman\r\nBaran Korkut\r\nMurat Erdör\r\nŞeref Özkan\r\nBurç Toluğ \r\n\r\n\r\n\r\n\r\n",
+				"html": "<DIV CLASS=\"col-sm-6 s-item-l\">\r\n<DIV CLASS=\"d-table\">\r\n<DIV CLASS=\"s-item  d-table-cell align-middle text-center\">\r\n<DIV CLASS=\"s-item-p-1\" STYLE=\"text-align: center;\"><SPAN STYLE=\"font-size: x-large;\"><STRONG>FİKRİN AKLINDA KALMASIN,</STRONG></SPAN></DIV>\r\n<DIV CLASS=\"s-item-p-2\" STYLE=\"text-align: center;\"><SPAN STYLE=\"font-size: x-large;\"><STRONG>GÜVENLİĞİMİZ İÇİN YARIŞSIN!</STRONG></SPAN></DIV>\r\n<DIV CLASS=\"s-item-p-2\" STYLE=\"text-align: center;\"><BR></DIV>\r\n<DIV CLASS=\"s-item-p-2\"><BR></DIV>\r\n<DIV CLASS=\"s-item-p-3\" STYLE=\"text-align: center;\"><SPAN STYLE=\"font-size: large;\">Aramızdaki bağ, yenilikçi fikirlerle güçleniyor!</SPAN></DIV>\r\n<DIV CLASS=\"s-item-p-3\"><BR></DIV>\r\n<DIV CLASS=\"s-item-p-3\">\r\n<H2 CLASS=\"wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.2s\"><SPAN STYLE=\"color: #ff0000;\">HACKATHON KONUSU</SPAN></H2>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" DATA-WOW-DELAY=\"0.45s\"><STRONG>ÖZEL GÜVENLİK HİZMETLERİ DAHİLİNDE</STRONG></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" DATA-WOW-DELAY=\"0.45s\"> </P>\r\n<UL>\r\n<LI>Ziyarete açık kalabalık mekânlara</LI>\r\n<LI>Geniş alana yayılı ziyarete kapalı tesislere</LI>\r\n<LI>Kıymetli evrak veya kıymetli eşya nakil işine</LI>\r\n<LI>Bireysel ihtiyaçlara yönelik</LI>\r\n</UL>\r\n<P> </P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><STRONG>FİZİKİ GÜVENLİK UYGULAMALARINA</STRONG></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><SPAN><SPAN STYLE=\"color: #ff0000;\"><STRONG>Deneyim</STRONG>, <STRONG>Hız</STRONG>, <STRONG>Dijitalleşme</STRONG> ve <STRONG>Yetkinlik</STRONG></SPAN> konularında iyileştirme yaratacak</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><STRONG><SPAN>Uygulanabilir, Özgün ve Fayda Sağlayacak </SPAN></STRONG></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Entegre Çözüm Önerilerinizi</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><STRONG><SPAN>BEKLİYORUZ!</SPAN></STRONG></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><SPAN STYLE=\"text-decoration: underline; font-size: large;\"><STRONG>Program Akışı:</STRONG></SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN STYLE=\"color: #ff0000; font-size: medium;\"><STRONG>1.Gün</STRONG></SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN>09.30-10.00 </SPAN><SPAN><BR> <SPAN>Hackathon açılış konuşmaları ( amacın paylaşılması, program detaylarının anlatılması) </SPAN><BR> </SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN><SPAN>10.00-12.00 </SPAN><BR> <SPAN>Hackathon işleyişi ve girişim fikrini hayat geçirme ile ilgili eğitim </SPAN><BR> </SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN><SPAN>12.00-13.00 </SPAN><BR> <SPAN>Katılımcılarla ısınma aktivitesi yapılması ve Yemek </SPAN><BR> </SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN><SPAN>13.30-14.00 </SPAN><BR> <SPAN>60 saniyelik idea pitch </SPAN><BR> <BR> <SPAN>14.00-14.10 </SPAN><BR> <SPAN>Fikirlerin oylanması </SPAN><BR> <BR> <SPAN>14.10-14.20 </SPAN><BR> <SPAN>En fazla oy alan10 ekibin seçilmesi </SPAN><BR> <BR> <SPAN>14.20-14.30 </SPAN><BR> <SPAN>En fazla 5 kişiden oluşan takımların oluşturulması </SPAN><BR> <BR> <SPAN>14.30-14.35 </SPAN><BR> <SPAN>24 saatlik iş geliştirme-kodlama sürecinin başlatılması</SPAN><BR> <BR> <SPAN>Hacking…. (Tepe Savunma + Organizasyon Mentörleri ile çalışma)</SPAN><BR> <BR> <SPAN STYLE=\"font-size: medium; color: #ff0000;\"><STRONG>2.Gün</STRONG></SPAN><BR> <BR> <SPAN>10.00-11.00 </SPAN><BR> <SPAN>Mentörlerle çalışma (Organizasyon Mentörleri ile çalışma)</SPAN><BR> <BR> <SPAN>11.00-11.30 </SPAN><BR> <SPAN>Sunum eğitimi</SPAN><BR> <BR> <SPAN>11.30-14.30 </SPAN><BR> <SPAN>Hacking…</SPAN><BR> <BR> <SPAN>14.30-15.30 </SPAN><BR> <SPAN>Sunumların tamamlanması ve teslim</SPAN></SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN> <SPAN>15.30-16.30 </SPAN><BR> <SPAN>Jüriye sunumların yapılması</SPAN></SPAN></P>\r\n<P CLASS=\"MsoNormal\" STYLE=\"text-align: center;\"><SPAN><BR> <SPAN>16.30-17.00 </SPAN><BR> <SPAN>Jüri kararının açıklanması</SPAN><BR> <BR> <SPAN>17.00-17.30 </SPAN><BR> <SPAN>Ödül Töreni</SPAN><BR> <BR> <SPAN>18.00 </SPAN><BR> <SPAN>Kokteyl</SPAN><BR> <BR><SPAN> </SPAN></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><SPAN STYLE=\"text-decoration: underline;\"><SPAN STYLE=\"font-size: large;\"><STRONG>Ödüller:</STRONG></SPAN></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><STRONG>1. Takıma</STRONG>  <SPAN STYLE=\"color: #ff0000; font-size: medium;\"><STRONG>20.000TL </STRONG></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><STRONG>2. Takıma</STRONG> <SPAN STYLE=\"color: #ff0000; font-size: medium;\"><STRONG>15.000TL </STRONG></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: center;\" DATA-WOW-DELAY=\"0.45s\"><STRONG>3. Takıma </STRONG> <SPAN STYLE=\"color: #ff0000; font-size: medium;\"><STRONG> 5.000TL </STRONG></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN STYLE=\"text-decoration: underline;\"><SPAN STYLE=\"font-size: large;\"><STRONG>Jüri Üyeleri:</STRONG></SPAN></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN> <SPAN><A HREF=\"https://tr.linkedin.com/in/bora-doğualp-a4440143\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">Bora Doğualp</A>  </SPAN></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN><A HREF=\"http://www.alphanmanas.com/\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\"><SPAN>Alphan Manas</SPAN></A></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN><A HREF=\"https://www.mserdark.com/\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">Serdar Kuzuloğlu</A> </SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"> </P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN STYLE=\"text-decoration: underline; font-size: large;\"><STRONG>Mentörler:</STRONG></SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Emre Özbek</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Özkan Zere</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Mine Dedekoca</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Burak Yaman</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Baran Korkut</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Murat Erdör</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Şeref Özkan</SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><SPAN>Burç Toluğ </SPAN></P>\r\n<P CLASS=\"desc col-sm-12 wow animated fadeIn animated animated\" STYLE=\"text-align: left;\" DATA-WOW-DELAY=\"0.45s\"><BR></P>\r\n</DIV>\r\n</DIV>\r\n</DIV>\r\n</DIV>"
+			},
+			"id": "44916669969",
+			"url": "https://www.eventbrite.com/e/tepe-savunma-hackathon-tickets-44916669969?aff=ebapi",
+			"vanity_url": "https://tepesavunmahackathon2018.eventbrite.com",
+			"start": {
+				"timezone": "Europe/Istanbul",
+				"local": "2018-06-22T09:00:00",
+				"utc": "2018-06-22T06:00:00Z"
+			},
+			"end": {
+				"timezone": "Europe/Istanbul",
+				"local": "2018-06-23T19:00:00",
+				"utc": "2018-06-23T16:00:00Z"
+			},
+			"organization_id": "72093245707",
+			"created": "2018-04-06T14:55:52Z",
+			"changed": "2018-04-19T21:14:17Z",
+			"capacity": 300,
+			"capacity_is_custom": true,
+			"status": "live",
+			"currency": "USD",
+			"listed": true,
+			"shareable": true,
+			"online_event": false,
+			"tx_time_limit": 480,
+			"hide_start_date": false,
+			"hide_end_date": false,
+			"locale": "en_US",
+			"is_locked": false,
+			"privacy_setting": "unlocked",
+			"is_series": false,
+			"is_series_parent": false,
+			"is_reserved_seating": false,
+			"show_pick_a_seat": false,
+			"show_seatmap_thumbnail": false,
+			"show_colors_in_seatmap_thumbnail": false,
+			"source": "create_2.0",
+			"is_free": true,
+			"version": "3.0.0",
+			"logo_id": "43797477",
+			"organizer_id": "17231036806",
+			"venue_id": "24367406",
+			"category_id": "101",
+			"subcategory_id": "1001",
+			"format_id": "14",
+			"resource_uri": "https://www.eventbriteapi.com/v3/events/44916669969/",
+			"logo": {
+				"crop_mask": {
+					"top_left": {
+						"x": 0,
+						"y": 13
+					},
+					"width": 1200,
+					"height": 600
+				},
+				"original": {
+					"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F43797477%2F72093245707%2F1%2Foriginal.jpg?auto=compress&s=e1b6ab593ed79dc955500a1b0b8dc422",
+					"width": 1200,
+					"height": 627
+				},
+				"id": "43797477",
+				"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F43797477%2F72093245707%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C13%2C1200%2C600&s=a43c0bd3848457e000a7d09ca5a78584",
+				"aspect_ratio": "2",
+				"edge_color": "#55415e",
+				"edge_color_set": true
+			}
+		},
+		{
+			"name": {
+				"text": "AngelHack Cyprus Hackathon 2018",
+				"html": "AngelHack Cyprus Hackathon 2018"
+			},
+			"description": {
+				"text": "\n\nEvery year, AngelHack adventures across the globe for our yearly Global Hackathon Series. Over the course of Summer 2018, we’ll hit six continents, bridging the gap between Silicon Valley innovation and entrepreneurs all over the world.\nThis year’s theme? Seamless Technology. Hackathons are built for rapid innovation, and rapid isn’t always pretty. But no matter the roadblock, broken code or bumps, we continue on and push forward, together. There’s no boundary or limit to what we can create.\nSo join us! Create something cool. Meet great people. Win great prizes. Who knows, your founder journey may begin at Cyprus University of Technology in Cyprus!\n\n\nWe offer our own Grand Prize AND team up with awesome sponsors who have their own challenges and prizes you can go after. Aiming for the HACKcelerator invite? Only in it for some cool hardware? Good news, you can go for as many challenges as you want!\n\nAngelHack Challenge: Challenge yourself and your entrepreneurial spirit. Make something innovative without limits, something that brings positive change to the world, even something that solves a small problem. It’s that simple.\nAngelHack Prize: The winning team from each hackathon will receive an invite into AngelHack’s HACKcelerator program.\n\nCode For A Cause Impact Award Challenge: Build technology that solves a social or environmental problem and positively impacts your local community.\nCode For A Cause Impact Award Prize: One Impact Award will be given out at each event. At the end of the Global Hackathon Series, the top Impact Award projects will be chosen by an expert judging panel including; Chan Zuckerberg, Chan Zuckerberg Initiative; and more. These top five teams will receive an official invite into the HACKcelerator.\nStay Tuned for More Prizes to Come!\n\n\nAll ages, genders, and skill levels are welcome. Come solo or in a team of up to five, and spend the weekend learning new skills, meeting your local tech community and tech sponsors, enjoying free food, and more.\nOur attendees typically consist of developers looking to improve their skills or expand their horizons, students, designers of all skill-sets, and serious entrepreneurs that can add value to teams. Bring your ideas and let’s go!\nWant to get involved in another way? We’re always open to chat with potential sponsors, mentors, and judges! Just email info (at) angelhack.com to get connected.\n\n\nDay 1 9:00 AM : Doors Open & Breakfast10:00 AM : Opening Ceremony, Sponsor Welcomes, & Team Building11:00 AM : Coding Kick Off1:00 PM : Lunch2:00 PM : Sponsor Breakout Sessions 7:00 PM : Dinner10:00 PM : Pitch Workshop*Venue open overnight  Day 2 8:00 AM : Breakfast12:00 PM : Lunch1:00 PM : Code Freeze & Submission Deadline on hackathon.io 1:30 PM : A/V Check2:00 PM : Demos 4:00 PM : Winners are Announced / Prizes!\n\n\nWe know some rules are meant to be broken, but you should probably (read: definitely) stick by these:\n1. Fresh Code - We all start coding at the same time. It’s cool to work on designs beforehand, digital mockups, open source frameworks, and anything else available to everyone, but keep things within fair limits.\n2. Code Review - Winning teams may be subject to a code-review at some point following the event or immediately before winning. This is to ensure that all code used is in fact fresh.\n3. Ownership and IP - You own your IP and whatever you create. Simple as that.\n4. Team Size - No more than five people.\n5. Submissions - Each hackathon has its individual hackathon.io page where projects need to be submitted by the designated time. You’ll receive an email with instructions on how to do just that.\n6. Demos - You’ll have 2 minutes to demo the functionality of your project and talk through your idea, and 1 minute for Q&A from judges.\n7. Be cool to your fellow hackers! Check out our Code of Conduct.\n\n\nHow is the hackathon judged?Projects will be judged based on the following criteria, with a total of 5 points per criteria:\n\nFundability: How fundable is this idea? Is there potential for a sustainable business model?\nExecution: How well was the project executed and explained? Did it work?\nUI/UX: Beyond design, was the end-to-end user experience for the solution considered?\nOriginality: How original, creative or unique is the idea?\nScalability: How scalable is the solution? Will it make an impact?\n\nKnow someone who would make a great judge of awesomeness and innovation? Nominate them (or yourself!) at info@angelhack (dot) com\n\n\n\n\n\nCurious what it looks like to sponsor awesomeness and innovation? Reach out to us at info@angelhack (dot) com\n",
+				"html": "<P><IMG SRC=\"https://i.imgur.com/Guk8XWQ.jpg\"></P>\n<P><IMG SRC=\"https://i.imgur.com/ANPGA44.jpg\"></P>\n<P>Every year, AngelHack adventures across the globe for our yearly Global Hackathon Series. Over the course of Summer 2018, we’ll hit six continents, bridging the gap between Silicon Valley innovation and entrepreneurs all over the world.</P>\n<P>This year’s theme? <STRONG>Seamless Technology.</STRONG> Hackathons are built for rapid innovation, and rapid isn’t always pretty. But no matter the roadblock, broken code or bumps, we continue on and push forward, together. There’s no boundary or limit to what we can create.</P>\n<P>So join us! Create something cool. Meet great people. Win great prizes. Who knows, your founder journey may begin at <STRONG>Cyprus University of Technology</STRONG> in <STRONG>Cyprus</STRONG>!</P>\n<P><BR></P>\n<P><IMG SRC=\"https://i.imgur.com/XHbQzaH.jpg\"></P>\n<P>We offer our own Grand Prize AND team up with awesome sponsors who have their own challenges and prizes you can go after. Aiming for the HACKcelerator invite? Only in it for some cool hardware? Good news, you can go for as many challenges as you want!</P>\n<P><IMG SRC=\"https://i.imgur.com/5eRVN7r.png\"></P>\n<P><STRONG>AngelHack Challenge:</STRONG> Challenge yourself and your entrepreneurial spirit. Make something innovative without limits, something that brings positive change to the world, even something that solves a small problem. It’s that simple.</P>\n<P><STRONG>AngelHack Prize:</STRONG> The winning team from each hackathon will receive an <A HREF=\"https://medium.com/angelhack/meet-the-hackcelerators-37-new-startups-dbaeede057ad\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">invite into AngelHack’s HACKcelerator program</A>.</P>\n<P><STRONG><IMG SRC=\"https://i.imgur.com/2BAo34H.png\"></STRONG><BR></P>\n<P><STRONG>Code For A Cause Impact Award Challenge:</STRONG> Build technology that solves a social or environmental problem and positively impacts your local community.</P>\n<P><STRONG>Code For A Cause Impact Award Prize:</STRONG> One Impact Award will be given out at each event. At the end of the Global Hackathon Series, the top Impact Award projects will be chosen by an expert judging panel including; Chan Zuckerberg, Chan Zuckerberg Initiative; and more. These top five teams will receive an official invite into the HACKcelerator.</P>\n<P><STRONG>Stay Tuned for More Prizes to Come!</STRONG></P>\n<P><BR></P>\n<P><IMG SRC=\"https://i.imgur.com/1oGcOYr.jpg\"></P>\n<P>All ages, genders, and skill levels are welcome. Come solo or in a team of up to five, and spend the weekend learning new skills, meeting your local tech community and tech sponsors, enjoying free food, and more.</P>\n<P>Our attendees typically consist of developers looking to improve their skills or expand their horizons, students, designers of all skill-sets, and serious entrepreneurs that can add value to teams. Bring your ideas and let’s go!</P>\n<P>Want to get involved in another way? We’re always open to chat with potential sponsors, mentors, and judges! Just email info (at) angelhack.com to get connected.<BR></P>\n<P><BR></P>\n<P><IMG SRC=\"https://i.imgur.com/0O1v8ZM.jpg\"></P>\n<P><STRONG>Day 1</STRONG> <BR>9:00 AM : Doors Open &amp; Breakfast<BR>10:00 AM : Opening Ceremony, Sponsor Welcomes, &amp; Team Building<BR>11:00 AM : Coding Kick Off<BR>1:00 PM : Lunch<BR>2:00 PM : Sponsor Breakout Sessions <BR>7:00 PM : Dinner<BR>10:00 PM : Pitch Workshop<BR><EM>*Venue open overnight</EM> <BR> <BR><STRONG>Day 2</STRONG> <BR>8:00 AM : Breakfast<BR>12:00 PM : Lunch<BR>1:00 PM : Code Freeze &amp; Submission Deadline on hackathon.io <BR>1:30 PM : A/V Check<BR>2:00 PM : Demos <BR>4:00 PM : Winners are Announced / Prizes!</P>\n<P><BR></P>\n<P><IMG SRC=\"https://i.imgur.com/g7lgtlC.jpg\"></P>\n<P>We know some rules are meant to be broken, but you should probably (read: definitely) stick by these:</P>\n<P><STRONG>1. Fresh Code</STRONG> - We all start coding at the same time. It’s cool to work on designs beforehand, digital mockups, open source frameworks, and anything else available to everyone, but keep things within fair limits.</P>\n<P><STRONG>2. Code Review</STRONG> - Winning teams may be subject to a code-review at some point following the event or immediately before winning. This is to ensure that all code used is in fact fresh.</P>\n<P><STRONG>3. Ownership and IP</STRONG> - You own your IP and whatever you create. Simple as that.</P>\n<P><STRONG>4. Team Size</STRONG> - No more than five people.</P>\n<P><STRONG>5. Submissions</STRONG> - Each hackathon has its individual <A HREF=\"http://www.hackathon.io/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">hackathon.io</A> page where projects need to be submitted by the designated time. You’ll receive an email with instructions on how to do just that.</P>\n<P><STRONG>6. Demos</STRONG> - You’ll have 2 minutes to demo the functionality of your project and talk through your idea, and 1 minute for Q&A from judges.</P>\n<P><STRONG>7. Be cool to your fellow hackers! Check out our <A HREF=\"https://drive.google.com/a/angelhack.com/file/d/0B96JKELGAqzhZzhJRDVJREZmQVU/view?usp=sharing\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Code of Conduct</A>.</STRONG></P>\n<P><BR></P>\n<P><IMG SRC=\"https://i.imgur.com/KH52fbQ.jpg\"></P>\n<P><STRONG>How is the hackathon judged?</STRONG><BR>Projects will be judged based on the following criteria, with a total of 5 points per criteria:</P>\n<UL>\n<LI><STRONG>Fundability</STRONG>: How fundable is this idea? Is there potential for a sustainable business model?</LI>\n<LI><STRONG>Execution:</STRONG> How well was the project executed and explained? Did it work?</LI>\n<LI><STRONG>UI/UX:</STRONG> Beyond design, was the end-to-end user experience for the solution considered?</LI>\n<LI><STRONG>Originality:</STRONG> How original, creative or unique is the idea?</LI>\n<LI><STRONG>Scalability:</STRONG> How scalable is the solution? Will it make an impact?</LI>\n</UL>\n<P>Know someone who would make a great judge of awesomeness and innovation? Nominate them (or yourself!) at info@angelhack (dot) com</P>\n<P><BR></P>\n<P><IMG SRC=\"https://i.imgur.com/oBl6XIL.jpg\"></P>\n<P><IMG SRC=\"https://i.imgur.com/zOFlyrW.png\"></P>\n<P><IMG SRC=\"https://i.imgur.com/4XJDUlR.jpg\"></P>\n<P><IMG SRC=\"https://i.imgur.com/0wIvzET.png\"></P>\n<P>Curious what it looks like to sponsor awesomeness and innovation? Reach out to us at info@angelhack (dot) com</P>\n<P><IMG SRC=\"https://i.imgur.com/0Timo21.jpg\"><IMG SRC=\"https://i.imgur.com/DLILbJJ.png\"></P>"
+			},
+			"id": "45923319886",
+			"url": "https://www.eventbrite.com/e/angelhack-cyprus-hackathon-2018-tickets-45923319886?aff=ebapi",
+			"vanity_url": "https://angelhack-cyprus-2018.eventbrite.com",
+			"start": {
+				"timezone": "Asia/Nicosia",
+				"local": "2018-07-07T09:00:00",
+				"utc": "2018-07-07T06:00:00Z"
+			},
+			"end": {
+				"timezone": "Asia/Nicosia",
+				"local": "2018-07-08T18:00:00",
+				"utc": "2018-07-08T15:00:00Z"
+			},
+			"organization_id": "88861954715",
+			"created": "2018-05-09T02:42:32Z",
+			"changed": "2018-05-11T03:28:18Z",
+			"capacity": 100,
+			"capacity_is_custom": true,
+			"status": "live",
+			"currency": "EUR",
+			"listed": true,
+			"shareable": true,
+			"online_event": false,
+			"tx_time_limit": 1800,
+			"hide_start_date": false,
+			"hide_end_date": false,
+			"locale": "en_US",
+			"is_locked": false,
+			"privacy_setting": "unlocked",
+			"is_series": false,
+			"is_series_parent": false,
+			"is_reserved_seating": false,
+			"show_pick_a_seat": false,
+			"show_seatmap_thumbnail": false,
+			"show_colors_in_seatmap_thumbnail": false,
+			"source": "create_2.0",
+			"is_free": false,
+			"version": "3.0.0",
+			"logo_id": "44681106",
+			"organizer_id": "6031487927",
+			"venue_id": "24696006",
+			"category_id": "102",
+			"subcategory_id": "2004",
+			"format_id": "14",
+			"resource_uri": "https://www.eventbriteapi.com/v3/events/45923319886/",
+			"logo": {
+				"crop_mask": {
+					"top_left": {
+						"x": 0,
+						"y": 0
+					},
+					"width": 2160,
+					"height": 1080
+				},
+				"original": {
+					"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44681106%2F136983293532%2F1%2Foriginal.jpg?auto=compress&s=d16f55da93eeb01635121fcd391be10a",
+					"width": 2160,
+					"height": 1080
+				},
+				"id": "44681106",
+				"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44681106%2F136983293532%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C0%2C2160%2C1080&s=f7d4aab003ea9a7c0f559fbb2cfeb26b",
+				"aspect_ratio": "2",
+				"edge_color": "#88989c",
+				"edge_color_set": true
+			}
+		}
 	],
-	[
-		"Hackquarters Pioneers Konya & Red Bull Amaphiko: Sosyal Girişimcilik",
-		"45377728006",
-		"https://www.eventbrite.com/e/hackquarters-pioneers-konya-red-bull-amaphiko-sosyal-girisimcilik-tickets-45377728006?aff=ebapi",
-		"2018-05-04T18:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44084395%2F150341214994%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C0%2C2160%2C1080&s=598ffafb8acba2406853ffdcc5bc0706"
-	],
-	[
-		"3. SANAL/ARTTIRILMIŞ GERÇEKLİK & CİDDİ OYUNLAR BULUŞTAYI",
-		"45617917419",
-		"https://www.eventbrite.com/e/3-sanalarttirilmis-gerceklik-ciddi-oyunlar-bulustayi-tickets-45617917419?aff=ebapi",
-		"2018-05-05T09:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44160605%2F177032608965%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=6%2C17%2C534%2C267&s=241bc0eab6ce13febc79ea640f8549a9"
-	],
-	[
-		"Derin Öğrenmeye Serbest Dalış | Yapay Zeka Semineri (GH Beyoğlu)",
-		"45411169029",
-		"https://www.eventbrite.com/e/derin-ogrenmeye-serbest-dals-yapay-zeka-semineri-gh-beyoglu-tickets-45411169029?aff=ebapi",
-		"2018-05-07T19:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F43875226%2F195996746142%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C190%2C1122%2C561&s=aea7c7ac9d63a03ffc7fbbbf5be81685"
-	],
-	[
-		"TestTalks #19: Continuous Testing",
-		"45718651718",
-		"https://www.eventbrite.com/e/testtalks-19-continuous-testing-tickets-45718651718?aff=ebapi",
-		"2018-05-07T19:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44317695%2F176959199672%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C0%2C1600%2C800&s=9519b5ccde4c3cefd24a434e7839db2b"
-	],
-	[
-		"Dijital Detoks I",
-		"45549098580",
-		"https://www.eventbrite.com/e/dijital-detoks-i-tickets-45549098580?aff=ebapi",
-		"2018-05-12T08:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44069158%2F135998219950%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=56%2C0%2C1042%2C521&s=e9ef30e7bcdd579249273b1180ce7733"
-	],
-	[
-		"Developer Summit İstanbul",
-		"43796965904",
-		"https://www.eventbrite.com/e/developer-summit-istanbul-tickets-43796965904?aff=ebapi",
-		"2018-05-12T09:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F43331262%2F141179061746%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=43%2C0%2C592%2C296&s=6bdee778e77ad1a6c6e864b60606a48b"
-	],
-	[
-		"Hackquarters Pioneers Düzce Üniversitesi & Redbull Amaphiko: Sosyal Girişimcilik",
-		"45375796228",
-		"https://www.eventbrite.com/e/hackquarters-pioneers-duzce-universitesi-redbull-amaphiko-sosyal-girisimcilik-tickets-45375796228?aff=ebapi",
-		"2018-05-17T14:00:00",
-		"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44084186%2F150341214994%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=0%2C0%2C2160%2C1080&s=bcf8bb8946e6861eb3a212d061f486fe"
-	]
-]
+	"location": {
+		"latitude": "38.963745",
+		"augmented_location": {
+			"country": "Turkey"
+		},
+		"within": "905.715503021",
+		"longitude": "35.243322",
+		"address": "Turkey"
+	}
+}
