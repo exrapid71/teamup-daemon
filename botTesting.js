@@ -10,13 +10,39 @@ var token = 'OOQE6TLKHU6LZS42MR2E';
 
 
 var connection = mysql.createConnection({
-    host: 'zpj83vpaccjer3ah.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
-    user: 'rhyvl5hjprzbtgcl',
-    password: 'h6zby9jnvxiwiwnq',
-    database: 'm09ejdlb4hbxrn45',
+    host: 'localhost',
+    user: 'root',
+    password: 'exrapid71',
+    database: 'teamup',
     multipleStatements: 'true'
 });
 
+
+var willIGetNewPhone = new Promise(
+  function (resolve, reject) {
+      if (eventBriteSearch) {
+          resolve(); // fulfilled
+      } else {
+          var reason = new Error('mom is not happy');
+          reject();
+      }
+
+  }
+);
+
+var askMom = function () {
+    willIGetNewPhone
+      .then(function (fulfilled) {
+          console.log(fulfilled);
+          endConnection();
+      })
+      .catch(function (error) {
+          console.log(error.message);
+      });
+};
+
+
+//askMom();
 
 eventBriteSearch();
 
@@ -33,7 +59,7 @@ function eventBriteSearch() {
     //q:'yazılım',
     //q: 'hackathon',
     var params = {
-        q: 'yazılım',
+        q: 'hackathon',
         'location.address': 'Turkey',
         sort_by: 'date'
     };
@@ -51,7 +77,9 @@ function eventBriteSearch() {
         else {
             var events = data.events;
             var eventInfo = [];
+            console.log(events.length);
             for (var i = 0; i < events.length; i++) {
+                console.log("i " + i);
                 eventName = events[i].name.text;
                 eventId = events[i].id;
                 eventUrl = events[i].url;
@@ -67,15 +95,16 @@ function eventBriteSearch() {
                     eventDescription
                 ]);
                 eventData.push([eventName, eventId, eventUrl, eventStartdate, eventThumbnail, eventDescription]);
-                //checkEventDatabase(eventId, eventInfo);
-                saveEventDatabase(eventInfo);
+                checkEventDatabase(eventId, eventInfo);
+                //saveEventDatabase(eventInfo);
             }
 
-            //saveJson(eventData);
         }
         //cannot end connection
         //endConnection();
+        return eventData
     });
+
 }
 
 
@@ -95,10 +124,10 @@ function saveEventDatabase(event) {
 
     connection.connect(function (err) {
         if (err) {
-            console.log("cannot connect");
+            console.log("Save cannot connect");
         }
         else {
-            console.log("Connected!");
+            console.log("Save Connected!");
             connection.on('error', function (err) {
                 console.log('db error', err);
                 if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
@@ -124,10 +153,10 @@ function checkEventDatabase(eventId, eventInfo) {
     var eventIds;
     connection.connect(function (err) {
         if (err) {
-            console.log("cannot connect");
+            console.log("Check cannot connect");
         }
         else {
-            console.log("Connected!");
+            console.log("Check Connected!");
 
             connection.on('error', function (err) {
                 console.log('db error', err);
@@ -143,20 +172,27 @@ function checkEventDatabase(eventId, eventInfo) {
                     throw error;
                 }
                 else {
-                    console.log(results);
-                    console.log(results[0].id);
+                    console.log(results[0]);
+                    //console.log(results[0].eventid);
                     var index = 0;
                     for (var i = 0; i < results.length; i++) {
-                        if (results[i].id === eventId) {
+                        //console.log(results.length);
+                        //console.log(index);
+                        //console.log(results[i].eventid);
+                        //console.log(eventId);
+                        if (results[i].eventid === eventId) {
                             index++;
+                            console.log()
+                            console.log(index);
                             break;
                         }
                     }
-                    if (index) {
-                        console.log(eventId + " Same Event");
+                    if (index === 0) {
+                        saveEventDatabase(eventInfo);
+
                     }
                     else {
-                        saveEventDatabase(eventInfo);
+                        console.log(eventId + " Same Event");
                     }
                 }
             });
