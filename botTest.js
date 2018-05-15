@@ -19,6 +19,7 @@ var connection = mysql.createConnection({
     multipleStatements: 'true'
 });
 var datas;
+
 eventBriteSearch();
 
 //null gelince bide yer mekan isimleri ve database connection
@@ -33,7 +34,7 @@ function eventBriteSearch() {
         console.log(error.message);
     }
     var params = {
-        q: 'hackathon',
+        q: 'yazılım',
         'location.address': 'Turkey',
         sort_by: 'date'
     };
@@ -56,9 +57,10 @@ function eventBriteSearch() {
             saveJson(data);
             var events = data.events;
 
+            console.log(events.length);
             for (var i = 0; i < events.length; i++) {
                 var eventInfo = [];
-
+                console.log("i " + i);
                 eventName = events[i].name.text;
                 //eventInfo.push(eventName);
                 eventId = events[i].id;
@@ -117,7 +119,7 @@ function eventBriteSearch() {
                 //console.log(eventInfo);
 
             }
-            //endConnection();
+            endConnection();
             //console.log(eventinfo);
             //saveJson(eventData);
             //setTimeout(endConnection(),15000);
@@ -190,16 +192,18 @@ function checkEventDatabase(eventId, eventInfo) {
     //var query = "SELECT * FROM posts WHERE title=" + mysql.escape("Hello MySQL");
     //connection.query('SELECT id FROM event WHERE id = ?', [eventIds] , function (error, results, fields) {
     //var sql = 'SELECT id FROM event WHERE id = ' + connection.escape(eventId);
-    var sql = 'SELECT id FROM event';
+    var sql = 'SELECT eventid FROM event';
     connection.query(sql, [eventIds], function (error, results, fields) {
         if (error) {
             throw error;
         }
         else {
-            console.log(results[0].id);
+            //console.log(results);
+            console.log(results[0].eventid);
             var index = 0;
             for (var i = 0; i < results.length; i++) {
-                if (results[i].id === eventId) {
+                if (results[i].eventid === eventId) {
+                    console.log(results[i].eventid);
                     index++;
                     break;
                 }

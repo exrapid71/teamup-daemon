@@ -17,9 +17,9 @@ var connection = mysql.createConnection({
     multipleStatements: 'true'
 });
 
-
 eventBriteSearch();
 
+//null gelince bide yer mekan isimleri ve database connection
 function eventBriteSearch() {
 
     try {
@@ -30,13 +30,14 @@ function eventBriteSearch() {
     } catch (error) {
         console.log(error.message);
     }
-    //q:'yazılım',
-    //q: 'hackathon',
     var params = {
         q: 'yazılım',
         'location.address': 'Turkey',
         sort_by: 'date'
     };
+    //q: 'hackathon'
+    //q:'yazılım',
+    //'location.address' : 'Turkey'
     var eventName;
     var eventId;
     var eventUrl;
@@ -49,9 +50,13 @@ function eventBriteSearch() {
             console.log(error.message);
         }
         else {
+            //saveJson(data);
             var events = data.events;
-            var eventInfo = [];
+
+            console.log(events.length);
             for (var i = 0; i < events.length; i++) {
+                var eventInfo = [];
+                console.log("i " + i);
                 eventName = events[i].name.text;
                 eventId = events[i].id;
                 eventUrl = events[i].url;
@@ -66,16 +71,23 @@ function eventBriteSearch() {
                     eventThumbnail,
                     eventDescription
                 ]);
-                eventData.push([eventName, eventId, eventUrl, eventStartdate, eventThumbnail, eventDescription]);
-                //checkEventDatabase(eventId, eventInfo);
-                saveEventDatabase(eventInfo);
-            }
+                eventData.push([
+                    eventName,
+                    eventId,
+                    eventUrl,
+                    eventStartdate,
+                    eventThumbnail,
+                    eventDescription
+                ]);
 
-            //saveJson(eventData);
+                checkEventDatabase(eventId, eventInfo);
+            }
+            //endConnection();
+
         }
-        //cannot end connection
-        //endConnection();
+
     });
+
 }
 
 
@@ -93,75 +105,76 @@ function saveJson(textArray) {
 
 function saveEventDatabase(event) {
 
+    //handleDisconnect();
     connection.connect(function (err) {
         if (err) {
             console.log("cannot connect");
         }
         else {
             console.log("Connected!");
-            connection.on('error', function (err) {
-                console.log('db error', err);
-                if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
-                    saveEventDatabase(event);                         // lost due to either server restart, or a
-                } else {                                      // connnection idle timeout (the wait_timeout
-                    throw err;                                  // server variable configures this)
-                }
-            });
-            connection.query('INSERT INTO `event` (`name`, `eventid`, `url`, `start`, `thumbnail`,`description`) VALUES ?', [event], function (error, results, fields) {
-                if (error) {
-                    throw error;
-                }
-                else {
-                    console.log(results.insertId);
-                }
-            });
         }
     });
-
+    connection.on('error', function (err) {
+        console.log('db error', err);
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+            saveEventDatabase(event);
+        } else {
+            throw err;
+        }
+    });
+    connection.query('INSERT INTO `event` (`name`, `eventid`, `url`, `start`, `thumbnail`,`description`) VALUES ?', [event], function (error, results, fields) {
+        if (error) {
+            throw error;
+        }
+        else {
+            console.log(results.insertId);
+        }
+    });
 }
 
 function checkEventDatabase(eventId, eventInfo) {
     var eventIds;
+    //handleDisconnect();
     connection.connect(function (err) {
         if (err) {
             console.log("cannot connect");
         }
         else {
             console.log("Connected!");
-
-            connection.on('error', function (err) {
-                console.log('db error', err);
-                if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Connection to the MySQL server is usually
-                    checkEventDatabase(eventId, eventInfo);                         // lost due to either server restart, or a
-                } else {                                      // connnection idle timeout (the wait_timeout
-                    throw err;                                  // server variable configures this)
-                }
-            });
-            var sql = 'SELECT eventid FROM event';
-            connection.query(sql, [eventIds], function (error, results, fields) {
-                if (error) {
-                    throw error;
-                }
-                else {
-                    console.log(results);
-                    console.log(results[0].id);
-                    var index = 0;
-                    for (var i = 0; i < results.length; i++) {
-                        if (results[i].id === eventId) {
-                            index++;
-                            break;
-                        }
-                    }
-                    if (index) {
-                        console.log(eventId + " Same Event");
-                    }
-                    else {
-                        saveEventDatabase(eventInfo);
-                    }
-                }
-            });
-
         }
+    });
+    connection.on('error', function (err) {
+        console.log('db error', err);
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+            checkEventDatabase(eventId, eventInfo);
+        } else {
+            throw err;
+        }
+    });
+    var sql = 'SELECT eventid FROM event';
+    connection.query(sql, [eventIds], function (error, results, fields) {
+        if (error) {
+            throw error;
+        }
+        else {
+            //console.log(results[0].eventid);
+            var index = 0;
+            for (var i = 0; i < results.length; i++) {
+                if (results[i].eventid === eventId) {
+                    //console.log(results[i].eventid);
+                    index++;
+                    break;
+                }
+            }
+            if (index) {
+                console.log(eventId + " Same Event");
+            }
+            else {
+                saveEventDatabase(eventInfo);
+            }
+        }
+
+
     });
 
 
@@ -173,5 +186,23 @@ function endConnection() {
             return console.log('error:' + err.message);
         }
         console.log('Close the database connection.');
+    });
+}
+
+function handleDisconnect() {
+
+    connection.connect(function (err) {
+        if (err) {
+            console.log('error when connecting to db:', err);
+            setTimeout(handleDisconnect, 2000);
+        }
+    });
+    connection.on('error', function (err) {
+        console.log('db error', err);
+        if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+            handleDisconnect();
+        } else {
+            throw err;
+        }
     });
 }
