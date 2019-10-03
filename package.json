@@ -8,7 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "daemon"
+    "daemon",
+    "event-collect",
+    "api-connection",
+    "db-connection"
   ],
   "author": "exrapid71",
   "license": "ISC",
