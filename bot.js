@@ -8,7 +8,6 @@ var mysql = require('mysql');
 var eventbriteAPI = require('node-eventbrite');
 var token = 'OOQE6TLKHU6LZS42MR2E';
 
-
 var connection = mysql.createConnection({
     host: 'zpj83vpaccjer3ah.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
     user: 'rhyvl5hjprzbtgcl',
@@ -83,13 +82,10 @@ function eventBriteSearch() {
                 checkEventDatabase(eventId, eventInfo);
             }
             //endConnection();
-
         }
-
     });
 
 }
-
 
 function saveJson(textArray) {
     var json = JSON.stringify(textArray, null, '\t');
@@ -174,12 +170,11 @@ function checkEventDatabase(eventId, eventInfo) {
             }
         }
 
-
     });
-
-
+    
 }
 
+// handle to end connection
 function endConnection() {
     connection.end(function (err) {
         if (err) {
@@ -190,7 +185,6 @@ function endConnection() {
 }
 
 function handleDisconnect() {
-
     connection.connect(function (err) {
         if (err) {
             console.log('error when connecting to db:', err);
