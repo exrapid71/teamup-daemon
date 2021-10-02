@@ -1,12 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Coverage
+coverage
+
+# Transpiled files
+dist/
+
+# VS Code
+.vscode
+!.vscode/tasks.js
+
+# JetBrains IDEs
+.idea/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Misc
 .DS_Store
-
-node_modules
-
-lib/core/metadata.js
-lib/core/MetadataBlog.js
-
-website/translated_docs
-website/build/
-website/yarn.lock
-website/node_modules
-website/i18n/*
+package-lock.json
